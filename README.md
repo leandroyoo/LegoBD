@@ -357,6 +357,8 @@ INSERT INTO `inventory_sets`(`inventory_id`, `set_num`, `quantity`)
 
 
 
+Então no My SQL teremos algo parecido com isso
+![image](https://user-images.githubusercontent.com/94478634/216651069-4ee7f078-d7a8-4f57-8100-cd4059fd2573.png)
 
 
 
