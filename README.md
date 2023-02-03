@@ -20,9 +20,12 @@ MODELO CONCEITUAL
 
 
 
-Então vamos criar todas as tabelas no banco e inserir os dados para dar segmento nos modelos
+Então vamos criar o banco dbLego e todas as tabelas no banco e inserir os dados para dar segmento nos modelos
 
-Create table COLORS(
+CREATE DATABASE BDLEGO
+USE BDLEGO
+
+CREATE TABLE COLORS(
 
 id  int,
 name varchar(500),
@@ -77,7 +80,8 @@ INSERT INTO `colors`(`id`, `name`, `rgb`, `is_trans`)
 VALUES('15','White','FFFFFF','f');
 
 
-create table THEMES(
+
+CREATE TABLE  THEMES(
 id int ,
 name varchar(500),
 parent_id int 
@@ -123,7 +127,8 @@ VALUES (17,'Speed Slammers',1);
 
 
 
-create table SETS(
+
+CREATE TABLE  SETS(
 set_num int,
 name varchar(500),
 year varchar(20),
@@ -168,7 +173,8 @@ VALUES (011-1,'Basic Building Set','1968',366,145);
 
 
 
-create table PARTS(
+
+CREATE TABLE  PARTS(
 part_num int,
 name varchar(500),
 part_cat_id int
@@ -217,7 +223,7 @@ VALUES ('10036stk01','Sticker for Set 10036 - (821407)',17);
 
 
 
-create table PART_CATEGORIES(
+CREATE TABLE  PART_CATEGORIES(
 id int,
 name varchar(500)
 );
@@ -357,7 +363,9 @@ INSERT INTO `inventory_sets`(`inventory_id`, `set_num`, `quantity`)
 
 
 
-Então no My SQL teremos algo parecido com isso
+Então no My SQL teremos algo parecido com isso:
+
+
 ![image](https://user-images.githubusercontent.com/94478634/216651069-4ee7f078-d7a8-4f57-8100-cd4059fd2573.png)
 
 
