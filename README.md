@@ -410,8 +410,12 @@ ADD FOREIGN KEY (id_themes) REFERENCES  THEMES(id);
 
 
 vamos criar algumas consultas para dar segmento:
+-------------------------------------------------
+
 
 1 me de as peças da cor azul?
+---------------------------------------------------------- 
+
 
 SELECT *
 
@@ -426,9 +430,11 @@ WHERE C.NAME = 'BLUE'
 ORDER BY NAME
 
 GROUP BY NAME
- 
+
 
 2 Qual o total de peças da cor amerala?
+---------------------------------------------------------- 
+
 SELECT COUNT(*) 
 
 FROM INVENTORIES
@@ -446,6 +452,7 @@ GROUP BY NAME
 
 
 3 Quais todos os conjuntos(sets) do ano de 1970 ? 
+---------------------------------------------------------- 
 
 SELECT * 
 
@@ -457,6 +464,7 @@ WHERE YEAR = '1970'
 
 
 4  Quais todos os conjuntos(sets) depois de 1999 ?
+---------------------------------------------------------- 
 
 SELECT * 
 
@@ -469,6 +477,7 @@ WHERE YEAR < '1999'
 
 
 5 Quais o total de peças do invetário ?
+---------------------------------------------------------- 
 
 SELECT COUNT(*) AS total_de_peças 
 
