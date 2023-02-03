@@ -412,6 +412,7 @@ ADD FOREIGN KEY (id_themes) REFERENCES  THEMES(id);
 vamos criar algumas consultas para dar segmento:
 
 1 me de as peças da cor azul?
+
 SELECT *
 
 FROM INVENTORIES
