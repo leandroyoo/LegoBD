@@ -440,8 +440,10 @@ GROUP BY NAME
 2 Qual o total de peças da cor amerala?
 ---------------------------------------------------------- 
 
-SELECT 
+SELECT
+
 P.NAME,
+
 C.NAME,
 
 FROM PARTS P
@@ -461,11 +463,13 @@ GROUP BY NAME
 3 Quais todos os conjuntos(sets) do ano de 1970 ? 
 ---------------------------------------------------------- 
 
-SELECT * 
+SELECT 
+
+S.NAME
 
 FROM INVETORY_SETS
 
-INNER JOIN SETS ON  
+INNER JOIN SETS S ON  
 
 IVENTORY_ID = SET_NUM
 
@@ -475,11 +479,13 @@ WHERE YEAR = '1970'
 4  Quais todos os conjuntos(sets) depois de 1999 ?
 ---------------------------------------------------------- 
 
-SELECT * 
+SELECT 
 
-FROM INVETORY_SETS
+S.NAME 
 
-INNER JOIN SETS ON
+FROM INVETORY_SETS 
+
+INNER JOIN SETS S ON
 
 IVENTORY_ID = SET_NUM
 
@@ -492,7 +498,7 @@ WHERE YEAR < '1999'
 
 SELECT COUNT(ID) AS total_de_peças 
 
-FROM PARTS P
+FROM PARTS 
 
 ORDER BY id
 
