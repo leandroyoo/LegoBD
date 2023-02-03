@@ -420,7 +420,9 @@ vamos criar algumas consultas para dar segmento:
 
 
 SELECT 
+
 P.NAME,
+
 C.NAME,
 
 FROM PARTS P
