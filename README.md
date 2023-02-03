@@ -411,25 +411,51 @@ ADD FOREIGN KEY (id_themes) REFERENCES  THEMES(id);
 
 vamos criar algumas consultas para dar segmento:
 
-1
+1 me de as peças da cor azul?
+SELECT *
+FROM INVENTORIES
+INNER JOIN COLORS C 
+ON ID = ID
+WHERE C.NAME = 'BLUE'
+ORDER BY NAME
+GROUP BY NAME
+ 
+
+2 Qual o total de peças da cor amerala?
+SELECT COUNT(*) 
+FROM INVENTORIES
+INNER JOIN COLORS C 
+ON ID = ID
+WHERE C.NAME = 'YELLOW' 
+ORDER BY NAME
+GROUP BY NAME
 
 
-2
+
+3 Quais todos os conjuntos(sets) do ano de 1970 ? 
+
+SELECT * 
+FROM INVETORY_SETS
+INNER JOIN SETS 
+WHERE YEAR = '1970'
+
+
+4  Quais todos os conjuntos(sets) depois de 1999 ?
+
+SELECT * 
+FROM INVETORY_SETS
+INNER JOIN SETS 
+WHERE YEAR < '1999'
 
 
 
+5 Quais o total de peças do invetário ?
 
-3
+SELECT COUNT(*) AS total_de_peças 
+FROM INVENTORIES
+ORDER BY id
+GROUP BY id
 
-
-
-
-4
-
-
-
-
-5
 
 
 
