@@ -419,9 +419,12 @@ vamos criar algumas consultas para dar segmento:
 ---------------------------------------------------------- 
 
 
-SELECT *
+SELECT 
+P.NAME,
+C.NAME,
 
-FROM INVENTORIES
+FROM PARTS P
+
 
 INNER JOIN COLORS C 
 
@@ -437,9 +440,11 @@ GROUP BY NAME
 2 Qual o total de peças da cor amerala?
 ---------------------------------------------------------- 
 
-SELECT COUNT(*) 
+SELECT 
+P.NAME,
+C.NAME,
 
-FROM INVENTORIES
+FROM PARTS P
 
 INNER JOIN COLORS C 
 
@@ -482,12 +487,12 @@ WHERE YEAR < '1999'
 
 
 
-5 Quais o total de peças do invetário ?
+5 Quais o total de peças ?
 ---------------------------------------------------------- 
 
-SELECT COUNT(*) AS total_de_peças 
+SELECT COUNT(ID) AS total_de_peças 
 
-FROM INVENTORIES
+FROM PARTS P
 
 ORDER BY id
 
