@@ -3,6 +3,9 @@ Desenvolvimento de um modelo relacional simulando uma fabrica da LEGO
 
 
 Para dar inicio na atividade fizemos um planejamento completo utilizando os modelos logico e conceitual.
+
+
+
 MODELO LOGICO  
 
 ![328720938_569974578504834_5918595721663644858_n](https://user-images.githubusercontent.com/94478634/216650135-4757d947-15dc-47f9-b401-ca3a62b5609a.jpg)
