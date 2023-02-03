@@ -23,6 +23,8 @@ MODELO CONCEITUAL
 Então vamos criar o banco dbLego e todas as tabelas no banco e inserir os dados para dar segmento nos modelos
 
 CREATE DATABASE BDLEGO
+
+
 USE BDLEGO
 
 CREATE TABLE COLORS(
