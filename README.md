@@ -372,3 +372,87 @@ Então no My SQL teremos algo parecido com isso:
 
 
 
+
+agora com base no modelo vamos criar as chaves primarias e estrageiras para fazer o relacionamento funcionar corretamente
+
+
+ALTER TABLE inventory_parts
+ADD FOREIGN KEY (inventory_id ) REFERENCES inventories(id);
+
+
+ALTER TABLE inventory_sets
+ADD FOREIGN KEY (inventory_id ) REFERENCES inventories(id);
+
+
+
+ALTER TABLE INVENTORY_PARTS
+ADD FOREIGN KEY (id_parts ) REFERENCES PARTS(id );
+
+
+
+ALTER TABLE INVENTORY_PARTS
+ADD FOREIGN KEY (inventory_id ) REFERENCES  inventories(id);
+
+
+ALTER TABLE parts
+ADD FOREIGN KEY (part_cat_id) REFERENCES PART_CATEGORIES(id );
+
+
+
+ALTER TABLE  criar
+ADD FOREIGN KEY (num_parts_sets) REFERENCES  sets(set_num);
+
+
+ALTER TABLE  criar
+ADD FOREIGN KEY (id_themes) REFERENCES  THEMES(id);
+
+
+
+
+vamos criar algumas consultas para dar segmento:
+
+1
+
+
+2
+
+
+
+
+3
+
+
+
+
+4
+
+
+
+
+5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
